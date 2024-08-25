@@ -1,0 +1,34 @@
+services:
+  # Postgres
+  postgres:
+    container_name: 'postgres'
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-P@ssword}
+      PGDATA: /data/postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_db:/data/postgres
+
+  # BackgroundService-Host
+  Host:
+    image: ${DOCKER_REGISTRY-}background-service
+    container_name: 'background-service'
+    restart: always
+    build:
+      context: .
+      dockerfile: ./BackgroundService.Host/Dockerfile
+    ports:
+      - 8080:8080
+      - 8081:8081
+    volumes:
+      - "~/data/logs:/app/Logs"
+      - "~/data/RelicLogs:/app/RelicLogs"
+    depends_on:
+      - postgres
+# Volumes
+volumes:
+  postgres_db:
+    driver: local

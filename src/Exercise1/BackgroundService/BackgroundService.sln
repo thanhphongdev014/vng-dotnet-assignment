@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundService.Host", "BackgroundService.Host\BackgroundService.Host.csproj", "{04677A90-A360-4693-8E63-9EAB26EFBEC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundService.EntityFrameworkCore", "BackgroundService.EntityFrameworkCore\BackgroundService.EntityFrameworkCore.csproj", "{87862AF3-9950-4C1D-A3CE-A62EDFC10838}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04677A90-A360-4693-8E63-9EAB26EFBEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04677A90-A360-4693-8E63-9EAB26EFBEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04677A90-A360-4693-8E63-9EAB26EFBEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04677A90-A360-4693-8E63-9EAB26EFBEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87862AF3-9950-4C1D-A3CE-A62EDFC10838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87862AF3-9950-4C1D-A3CE-A62EDFC10838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87862AF3-9950-4C1D-A3CE-A62EDFC10838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87862AF3-9950-4C1D-A3CE-A62EDFC10838}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BD3C328-5D14-4D33-A9F0-0C124A5F8F17}
+	EndGlobalSection
+EndGlobal
