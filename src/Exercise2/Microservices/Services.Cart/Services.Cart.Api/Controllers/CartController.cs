@@ -21,4 +21,11 @@ public class CartController(ICartService cartService) : ControllerBase
         await cartService.AddProductToCartAsync(input);
         return Ok();
     }
+
+    [HttpDelete]
+    public async Task<ActionResult> RemoveProductFromCart(RemoveProductFromCartDto input)
+    {
+        await cartService.RemoveProductFromCartAsync(input);
+        return Ok();
+    }
 }
